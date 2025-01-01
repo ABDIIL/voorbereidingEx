@@ -4,6 +4,10 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./frontend:/user/share/gninx/html
+      - ./frontend:/usr/share/nginx/html
+      - ./default.conf:/etc/nginx/conf.d/default.conf
+  api:
+    build: /home/abdil/voorbereidingEx/backend
+
     
 
